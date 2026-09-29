@@ -1,0 +1,1149 @@
+:root {
+    --primary-red: #AC3520;
+    --dark: #333333;
+    --light-bg: #f5f5f5;
+    --border: #cbd5e1;
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Sarabun', sans-serif;
+}
+
+
+body {
+    background-color: var(--light-bg);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #263449;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+    height: 94px;
+
+    background-color: white;
+
+    padding: 5px 45px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.header-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo-placeholder {
+    width: 82px;
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    background-color: white;
+}
+
+
+.logo-placeholder img {
+    width: 82px;
+    height: 82px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =====================================================
+   UNIVERSITY NAME
+===================================================== */
+
+.uni-name {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.thai-name {
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #000000;
+}
+
+
+.eng-name {
+    font-size: 8px;
+
+    color: #333333;
+
+    margin-top: 2px;
+}
+
+
+/* =====================================================
+   HEADER RIGHT
+===================================================== */
+
+.header-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.user-icon {
+    width: 42px;
+    height: 42px;
+
+    border: 1.5px solid var(--primary-red);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary-red);
+
+    font-size: 21px;
+}
+
+
+.system-name {
+    font-size: 8px;
+
+    color: #000000;
+
+    font-weight: 600;
+
+    line-height: 1.35;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+    min-height: 55px;
+
+    background-color: var(--primary-red);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+.nav-btn {
+    background-color: #333333;
+
+    color: white;
+
+    padding: 8px 20px;
+
+    border-radius: 12px;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+}
+
+
+.nav-btn:hover {
+    background-color: #333333;
+
+    color: white;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.main-content {
+    flex: 1;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 30px 20px 40px;
+}
+
+
+/* =====================================================
+   PAYMENT STEPS
+===================================================== */
+
+.payment-steps {
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 15px 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #eeeeee;
+}
+
+
+.step {
+    text-align: center;
+
+    background-color: #e8eefb;
+
+    border-radius: 10px;
+
+    padding: 9px 5px;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+.step.active {
+    background-color: var(--primary-red);
+
+    color: white;
+}
+
+
+.step-number {
+    font-weight: 600;
+
+    margin-bottom: 2px;
+}
+
+
+.step-text {
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   APPLICANT
+===================================================== */
+
+.applicant-card {
+    position: relative;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    margin-bottom: 18px;
+
+    display: flex;
+
+    gap: 15px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+.applicant-icon {
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    border-radius: 50%;
+
+    background-color: #e5edff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+}
+
+
+.applicant-info {
+    flex: 1;
+}
+
+
+.applicant-info small {
+    font-size: 10px;
+
+    color: #64748b;
+}
+
+
+.applicant-info h2 {
+    font-size: 17px;
+
+    color: #111827;
+
+    margin: 2px 0 5px;
+}
+
+
+.applicant-info p {
+    font-size: 10px;
+
+    color: #64748b;
+
+    line-height: 1.5;
+}
+
+
+.applicant-info strong {
+    color: #263449;
+}
+
+
+.applicant-status {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    background-color: #e5edff;
+
+    color: #334e8c;
+
+    border-radius: 20px;
+
+    padding: 5px 12px;
+
+    font-size: 9px;
+}
+
+
+/* =====================================================
+   AMOUNT
+===================================================== */
+
+.amount-card {
+    position: relative;
+
+    background: linear-gradient(
+        120deg,
+        #14283f,
+        #182c42,
+        #302326
+    );
+
+    color: white;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    margin-bottom: 22px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.amount-title {
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+
+.payment-status {
+    position: absolute;
+
+    top: 20px;
+    right: 20px;
+
+    background-color: #ffe5df;
+
+    color: var(--primary-red);
+
+    border-radius: 20px;
+
+    padding: 5px 11px;
+
+    font-size: 9px;
+}
+
+
+.amount {
+    font-size: 34px;
+
+    font-weight: 700;
+
+    margin-top: 15px;
+}
+
+
+.amount span {
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.deadline {
+    font-size: 10px;
+
+    margin-top: 7px;
+
+    color: #eeeeee;
+}
+
+
+/* =====================================================
+   SECTION BOX
+===================================================== */
+
+.section-box {
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #eeeeee;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+.section-title-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 15px;
+}
+
+
+.section-title-row h2 {
+    font-size: 16px;
+
+    color: #222222;
+}
+
+
+.section-title-row span {
+    font-size: 9px;
+
+    color: #555555;
+}
+
+
+.section-title-row p {
+    font-size: 10px;
+
+    color: #777777;
+
+    margin-top: 2px;
+}
+
+
+.required-badge {
+    background-color: var(--primary-red) !important;
+
+    color: white !important;
+
+    border-radius: 15px;
+
+    padding: 4px 10px;
+
+    font-size: 9px !important;
+}
+
+
+/* =====================================================
+   BANK
+===================================================== */
+
+.bank-card {
+    position: relative;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    border: 1px solid #eeeeee;
+}
+
+
+.bank-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 9px;
+
+    background-color: #315fc4;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+
+    float: left;
+
+    margin-right: 12px;
+}
+
+
+.bank-name {
+    padding-top: 2px;
+}
+
+
+.bank-name strong {
+    display: block;
+
+    font-size: 15px;
+
+    color: #222222;
+}
+
+
+.bank-name span {
+    display: block;
+
+    font-size: 10px;
+
+    color: #555555;
+}
+
+
+.account-type {
+    position: absolute;
+
+    top: 15px;
+
+    right: 15px;
+
+    background-color: #e6edff;
+
+    color: #3857a3;
+
+    padding: 5px 9px;
+
+    border-radius: 15px;
+
+    font-size: 9px;
+}
+
+
+.account-number-box {
+    clear: both;
+
+    margin-top: 18px;
+
+    background-color: #eef3ff;
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.account-number-box small {
+    display: block;
+
+    font-size: 9px;
+
+    color: #555555;
+}
+
+
+.account-number-box strong {
+    display: block;
+
+    font-size: 23px;
+
+    letter-spacing: 1px;
+
+    color: #111827;
+}
+
+
+.account-number-box button {
+    background-color: var(--primary-red);
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 10px 14px;
+
+    font-family: 'Sarabun', sans-serif;
+
+    cursor: pointer;
+}
+
+
+.bank-detail {
+    margin-top: 12px;
+}
+
+
+.bank-detail p {
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #777777;
+}
+
+
+.bank-detail span {
+    color: #333333;
+
+    margin-left: 15px;
+}
+
+
+/* =====================================================
+   UPLOAD
+===================================================== */
+
+.upload-box {
+    background-color: #f1f5ff;
+
+    border: 2px dashed #d99b8d;
+
+    border-radius: 10px;
+
+    min-height: 175px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+.upload-icon {
+    color: var(--primary-red);
+
+    font-size: 32px;
+
+    margin-bottom: 7px;
+}
+
+
+.upload-box h3 {
+    font-size: 13px;
+
+    color: #222222;
+}
+
+
+.upload-box p {
+    font-size: 9px;
+
+    color: #777777;
+
+    margin-top: 3px;
+}
+
+
+.upload-button {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    background-color: #e4eafa;
+
+    color: #333333;
+
+    border-radius: 8px;
+
+    padding: 8px 15px;
+
+    font-size: 10px;
+
+    cursor: pointer;
+}
+
+
+.upload-button input {
+    display: none;
+}
+
+
+.file-title {
+    font-size: 10px;
+
+    color: #555555;
+
+    margin-top: 14px;
+
+    margin-bottom: 6px;
+}
+
+
+.file-box {
+    background-color: #eef3ff;
+
+    border-radius: 8px;
+
+    padding: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.file-icon {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 7px;
+
+    background-color: #dbe6ff;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary-red);
+}
+
+
+.file-info {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.file-info strong {
+    font-size: 10px;
+
+    color: #333333;
+}
+
+
+.file-info span {
+    font-size: 9px;
+
+    color: #555555;
+}
+
+
+.file-actions {
+    font-size: 16px;
+
+    color: #333333;
+}
+
+
+.slip-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    margin-top: 10px;
+}
+
+
+.slip-details > div {
+    background-color: #f8fafc;
+
+    border-radius: 8px;
+
+    padding: 9px;
+}
+
+
+.slip-details small {
+    display: block;
+
+    font-size: 8px;
+
+    color: #777777;
+}
+
+
+.slip-details strong {
+    display: block;
+
+    font-size: 10px;
+
+    color: var(--primary-red);
+
+    margin-top: 2px;
+}
+
+
+.confirm-check {
+    display: flex;
+
+    gap: 8px;
+
+    align-items: flex-start;
+
+    margin-top: 15px;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    color: #555555;
+}
+
+
+.confirm-check input {
+    width: 17px;
+    height: 17px;
+
+    accent-color: var(--primary-red);
+
+    margin-top: 1px;
+}
+
+
+/* =====================================================
+   NOTICE
+===================================================== */
+
+.notice-box {
+    background-color: #e7efff;
+
+    border-radius: 10px;
+
+    padding: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.notice-box h3 {
+    font-size: 13px;
+
+    color: #222222;
+
+    margin-bottom: 7px;
+}
+
+
+.notice-box ul {
+    padding-left: 18px;
+}
+
+
+.notice-box li {
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #555555;
+}
+
+
+/* =====================================================
+   CONFIRM BUTTON
+===================================================== */
+
+.confirm-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    height: 52px;
+
+    background-color: var(--primary-red);
+
+    color: white;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    margin-bottom: 5px;
+}
+
+
+.confirm-button:hover {
+    background-color: var(--primary-red);
+
+    color: white;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+    min-height: 94px;
+
+    background-color: var(--primary-red);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding: 20px 48px;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+}
+
+
+.footer-col {
+    flex: 1;
+}
+
+
+.footer-col:nth-child(2) {
+    padding-left: 50px;
+}
+
+
+.footer-col:nth-child(3) {
+    text-align: left;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: auto;
+
+        min-height: 80px;
+
+        padding: 8px 15px;
+    }
+
+
+    .logo-placeholder {
+        width: 65px;
+        height: 65px;
+    }
+
+
+    .logo-placeholder img {
+        width: 65px;
+        height: 65px;
+    }
+
+
+    .thai-name {
+        font-size: 13px;
+    }
+
+
+    .eng-name {
+        font-size: 6px;
+    }
+
+
+    .system-name {
+        display: none;
+    }
+
+
+    .user-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .navbar {
+        min-height: 48px;
+
+        gap: 5px;
+
+        padding: 6px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .nav-btn {
+        padding: 6px 10px;
+
+        font-size: 9px;
+    }
+
+
+    .main-content {
+        width: 100%;
+
+        padding: 20px 12px 30px;
+    }
+
+
+    .payment-steps {
+        padding: 10px;
+
+        gap: 5px;
+    }
+
+
+    .step {
+        padding: 8px 3px;
+    }
+
+
+    .applicant-card {
+        padding: 15px;
+    }
+
+
+    .applicant-status {
+        position: static;
+
+        align-self: flex-start;
+
+        white-space: nowrap;
+    }
+
+
+    .amount {
+        font-size: 30px;
+    }
+
+
+    .account-number-box {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .account-number-box button {
+        width: 100%;
+    }
+
+
+    .footer {
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 18px 25px;
+    }
+
+
+    .footer-col:nth-child(2) {
+        padding-left: 0;
+    }
+
+
+    .footer-col:nth-child(3) {
+        text-align: left;
+    }
+
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>KMUTNB Register</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/loging.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="header-left">
+
+        <div class="logo-placeholder">
+
+            <img src="image/logo_kmutnb-(6).png"
+                 alt="KMUTNB Logo">
+
+        </div>
+
+
+        <div class="uni-name">
+
+            <div class="thai-name">
+                มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+            </div>
+
+            <div class="eng-name">
+                KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-right">
+
+        <div class="user-icon">
+
+            <svg width="20"
+                 height="20"
+                 viewBox="0 0 24 24"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-width="2"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                </path>
+
+                <circle cx="12"
+                        cy="7"
+                        r="4">
+                </circle>
+
+            </svg>
+
+        </div>
+
+
+        <div class="system-name">
+
+            KMUTNB<br>
+            ADMISSION SYSTEM
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <a href="index.html"
+       class="nav-btn">
+        หน้าแรก
+    </a>
+
+
+    <a href="register.html"
+       class="nav-btn">
+        ขึ้นทะเบียนนักศึกษา
+    </a>
+
+
+    <a href="login.html"
+       class="nav-btn">
+        เข้าสู่ระบบ
+    </a>
+
+
+    <a href="map.html"
+       class="nav-btn">
+        ติดต่อสอบถาม
+    </a>
+
+</nav>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main-content">
+
+
+    <p class="page-title">
+        ขึ้นทะเบียนนักศึกษาใหม่
+    </p>
+
+
+
+    <!-- ================= FORM ================= -->
+
+    <form class="form-container register-form"
+          action="index.html"
+          method="get">
+
+
+        <!-- LOGO -->
+
+        <div class="form-logo">
+
+            <img src="image/KMUTNB_Logo.svg.webp"
+                 alt="KMUTNB Logo">
+
+        </div>
+
+
+
+        <!-- เลขประจำตัวประชาชน -->
+
+        <div class="form-group">
+
+            <label for="citizenId">
+                เลขประจำตัวประชาชน
+            </label>
+
+            <input
+                type="text"
+                id="citizenId"
+                name="citizenId"
+                maxlength="13"
+                minlength="13"
+                pattern="[0-9]{13}"
+                placeholder="เลขประจำตัวประชาชน 13 หลัก"
+                required>
+
+        </div>
+
+
+
+        <!-- เบอร์โทร -->
+
+        <div class="form-group">
+
+        <label for="phone">
+            เบอร์โทร
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            maxlength="10"
+            minlength="10"
+            pattern="[0-9]{10}"
+            inputmode="numeric"
+            placeholder="กรอกเบอร์โทร 10 หลัก"
+            required>
+
+    </div>
+
+
+        <!-- ชื่อ -->
+
+        <div class="form-group">
+
+            <label for="firstName">
+                ชื่อ
+            </label>
+
+            <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="ชื่อ(ไทย) ไม่ต้องมีคำนำหน้าชื่อ"
+                required>
+
+        </div>
+
+
+
+        <!-- นามสกุล -->
+
+        <div class="form-group">
+
+            <label for="lastName">
+                นามสกุล
+            </label>
+
+            <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="สกุล(ไทย)"
+                required>
+
+        </div>
+
+
+
+        <!-- รหัสผ่าน -->
+
+        <div class="form-group">
+
+            <label for="password">
+                รหัสผ่าน
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                placeholder="ความยาวไม่ต่ำกว่า 8 ตัวอักษร"
+                required>
+
+        </div>
+
+
+
+        <!-- ยืนยันรหัสผ่าน -->
+
+        <div class="form-group">
+
+            <label for="confirmPassword">
+                ยืนยันรหัสผ่าน
+            </label>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                minlength="8"
+                placeholder="เหมือนกับรหัสผ่าน"
+                required>
+
+        </div>
+
+
+
+        <!-- อีเมล์ -->
+
+        <div class="form-group">
+
+            <label for="email">
+                อีเมล์
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="kehowa@gmail.com"
+                required>
+
+        </div>
+
+
+
+        <!-- ยืนยันอีเมล์ -->
+
+        <div class="form-group">
+
+            <label for="confirmEmail">
+                ยืนยันอีเมล์
+            </label>
+
+            <input
+                type="email"
+                id="confirmEmail"
+                name="confirmEmail"
+                placeholder="เหมือนกับอีเมล์"
+                required>
+
+                
+        </div>
+        
+        <!-- ================= AGREEMENT ================= -->
+
+            <div class="agreement">
+
+                <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                    required>
+
+                <label for="agreement">
+                    ข้าพเจ้ายอมรับเงื่อนไขและข้อตกลงในการสมัครเรียน
+                </label>
+
+            </div>
+
+
+        <!-- ================= BUTTON ================= -->
+
+        <div class="form-buttons">
+
+            <button
+                type="submit"
+                class="signup-btn">
+
+                Sign up
+
+            </button>
+
+        </div>
+
+
+    </form>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-col">
+
+        ติดต่อ มจพ. กรุงเทพฯ<br>
+
+        มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+
+    </div>
+
+
+    <div class="footer-col">
+
+        1518 ถนนประชาราษฎร์ 1
+        แขวงวงศ์สว่าง เขตบางซื่อ<br>
+
+        กรุงเทพฯ 10800
+
+    </div>
+
+
+    <div class="footer-col">
+
+        โทรศัพท์ : +66 2 555-2000<br>
+
+        แฟกซ์ : +66 2 587-4350<br>
+
+        อีเมล : contact@op.kmutnb.ac.th
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

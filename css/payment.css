@@ -1,0 +1,1066 @@
+:root {
+
+    --primary-red: #AC3520;
+
+    --dark: #333333;
+
+    --light-bg: #f5f5f5;
+
+    --border: #cbd5e1;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: 'Sarabun', sans-serif;
+
+}
+
+
+body {
+
+    background-color: var(--light-bg);
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+
+    height: 94px;
+
+    background-color: white;
+
+    padding: 5px 45px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.header-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo-placeholder {
+
+    width: 82px;
+
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    background-color: white;
+
+}
+
+
+.logo-placeholder img {
+
+    width: 82px;
+
+    height: 82px;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+
+
+/* =====================================================
+   UNIVERSITY NAME
+===================================================== */
+
+.uni-name {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.thai-name {
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #000000;
+
+}
+
+
+.eng-name {
+
+    font-size: 8px;
+
+    color: #333333;
+
+    margin-top: 2px;
+
+}
+
+
+/* =====================================================
+   HEADER RIGHT
+===================================================== */
+
+.header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+}
+
+
+.user-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    border: 1.5px solid var(--primary-red);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: var(--primary-red);
+
+}
+
+
+.system-name {
+
+    font-size: 8px;
+
+    color: #000000;
+
+    font-weight: 600;
+
+    line-height: 1.35;
+
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    min-height: 55px;
+
+    background-color: var(--primary-red);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 16px;
+
+}
+
+
+.nav-btn {
+
+    background-color: #333333;
+
+    color: white;
+
+    padding: 8px 20px;
+
+    border-radius: 12px;
+
+    font-size: 11px;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+}
+
+
+.nav-btn:hover {
+
+    background-color: #333333;
+
+    color: white;
+
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.main-content {
+
+    flex: 1;
+
+    width: 100%;
+
+    padding: 28px 20px 35px;
+
+}
+
+
+/* =====================================================
+   SUCCESS
+===================================================== */
+
+.success-section {
+
+    text-align: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.success-icon {
+
+    width: 66px;
+
+    height: 66px;
+
+    margin: 0 auto 10px;
+
+    border-radius: 50%;
+
+    background-color: #65e5b3;
+
+    border: 7px solid #b5f6dd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #17664f;
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+}
+
+
+.success-section h1 {
+
+    font-size: 23px;
+
+    font-weight: 600;
+
+    color: #111827;
+
+}
+
+
+.success-section p {
+
+    font-size: 11px;
+
+    color: #777777;
+
+    margin-top: 2px;
+
+}
+
+
+.success-badge {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    padding: 5px 14px;
+
+    border-radius: 20px;
+
+    background-color: #65e5b3;
+
+    color: #145c49;
+
+    font-size: 10px;
+
+}
+
+
+/* =====================================================
+   RECEIPT CARD
+===================================================== */
+
+.receipt-card {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+}
+
+
+/* =====================================================
+   RECEIPT HEADER
+===================================================== */
+
+.receipt-header {
+
+    position: relative;
+
+    min-height: 125px;
+
+    padding: 20px 18px;
+
+    background-color: var(--primary-red);
+
+    color: white;
+
+}
+
+
+.receipt-logo {
+
+    position: absolute;
+
+    left: 17px;
+
+    top: 20px;
+
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    color: #d6a764;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.receipt-university {
+
+    padding-left: 48px;
+
+}
+
+
+.receipt-university strong {
+
+    display: block;
+
+    font-size: 14px;
+
+    line-height: 1.35;
+
+}
+
+
+.receipt-university span {
+
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 8px;
+
+}
+
+
+.receipt-reference {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    min-height: 41px;
+
+    padding: 9px 18px;
+
+    background-color: rgba(90, 22, 10, 0.28);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    font-size: 9px;
+
+}
+
+
+.complete {
+
+    color: #8af2c7;
+
+}
+
+
+/* =====================================================
+   AMOUNT
+===================================================== */
+
+.amount-section {
+
+    text-align: center;
+
+    padding: 22px 10px 18px;
+
+}
+
+
+.amount-section p {
+
+    font-size: 11px;
+
+    color: #777777;
+
+}
+
+
+.amount-section h2 {
+
+    color: var(--primary-red);
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    margin: 3px 0;
+
+}
+
+
+.amount-section span {
+
+    font-size: 10px;
+
+    color: #777777;
+
+}
+
+
+/* =====================================================
+   DOTTED LINE
+===================================================== */
+
+.dotted-line {
+
+    height: 15px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    border-top: 1px solid #eeeeee;
+
+}
+
+
+.dotted-line span {
+
+    width: 6px;
+
+    height: 6px;
+
+    border-radius: 50%;
+
+    background-color: var(--light-bg);
+
+}
+
+
+/* =====================================================
+   RECEIPT BODY
+===================================================== */
+
+.receipt-body {
+
+    padding: 15px 18px 20px;
+
+}
+
+
+/* =====================================================
+   PERSON
+===================================================== */
+
+.person-row {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 17px;
+
+}
+
+
+.person-icon {
+
+    width: 31px;
+
+    height: 31px;
+
+    min-width: 31px;
+
+    border-radius: 50%;
+
+    background-color: #f1f3f6;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 15px;
+
+    color: #334155;
+
+}
+
+
+.person-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.person-info small {
+
+    font-size: 9px;
+
+    color: #777777;
+
+}
+
+
+.person-info strong {
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: #222222;
+
+}
+
+
+.person-info span {
+
+    font-size: 9px;
+
+    color: #555555;
+
+}
+
+
+/* =====================================================
+   PAYMENT INFORMATION
+===================================================== */
+
+.payment-information {
+
+    background-color: #fafafa;
+
+    border-radius: 7px;
+
+    padding: 12px 10px;
+
+}
+
+
+.information-row {
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 5px;
+
+    margin-bottom: 9px;
+
+    font-size: 10px;
+
+    line-height: 1.45;
+
+}
+
+
+.information-row:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.information-row > span {
+
+    color: #777777;
+
+}
+
+
+.information-row strong {
+
+    font-weight: 500;
+
+    color: #222222;
+
+}
+
+
+.information-row .tax {
+
+    color: #26795c;
+
+}
+
+
+/* =====================================================
+   SIGNATURE
+===================================================== */
+
+.signature-area {
+
+    margin-top: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    gap: 10px;
+
+}
+
+
+.signature-text {
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    color: #666666;
+
+}
+
+
+.signature-text p {
+
+    margin-bottom: 5px;
+
+}
+
+
+.signature-text span {
+
+    color: #26795c;
+
+}
+
+
+.qr-placeholder {
+
+    width: 84px;
+
+    height: 90px;
+
+    background-color: #f1f2f4;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.qr-placeholder div {
+
+    width: 56px;
+
+    height: 56px;
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 37px;
+
+    color: #555555;
+
+}
+
+
+.qr-placeholder small {
+
+    font-size: 8px;
+
+    color: #555555;
+
+    margin-top: 3px;
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.payment-buttons {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin: 23px auto 0;
+
+}
+
+
+.download-button,
+.email-button {
+
+    width: 100%;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 13px;
+
+}
+
+
+.download-button {
+
+    background-color: var(--primary-red);
+
+    color: white;
+
+    font-weight: 500;
+
+}
+
+
+.email-button {
+
+    margin-top: 9px;
+
+    background-color: #e7e8eb;
+
+    color: #333333;
+
+}
+
+
+.home-button {
+
+    display: block;
+
+    width: fit-content;
+
+    margin: 18px auto 0;
+
+    color: #333333;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+}
+
+
+.home-button:hover {
+
+    color: var(--primary-red);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+    min-height: 94px;
+
+    background-color: var(--primary-red);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    padding: 20px 48px;
+
+    font-size: 10px;
+
+    line-height: 1.6;
+
+}
+
+
+.footer-col {
+
+    flex: 1;
+
+}
+
+
+.footer-col:nth-child(2) {
+
+    padding-left: 50px;
+
+}
+
+
+.footer-col:nth-child(3) {
+
+    text-align: left;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .header {
+
+        height: auto;
+
+        min-height: 80px;
+
+        padding: 8px 15px;
+
+    }
+
+
+    .logo-placeholder {
+
+        width: 65px;
+
+        height: 65px;
+
+    }
+
+
+    .logo-placeholder img {
+
+        width: 65px;
+
+        height: 65px;
+
+    }
+
+
+    .thai-name {
+
+        font-size: 13px;
+
+    }
+
+
+    .eng-name {
+
+        font-size: 6px;
+
+    }
+
+
+    .system-name {
+
+        display: none;
+
+    }
+
+
+    .user-icon {
+
+        width: 36px;
+
+        height: 36px;
+
+    }
+
+
+    .navbar {
+
+        min-height: 48px;
+
+        gap: 5px;
+
+        padding: 6px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .nav-btn {
+
+        padding: 6px 10px;
+
+        font-size: 9px;
+
+    }
+
+
+    .main-content {
+
+        padding: 20px 12px 30px;
+
+    }
+
+
+    .success-section h1 {
+
+        font-size: 20px;
+
+    }
+
+
+    .receipt-card {
+
+        max-width: 500px;
+
+    }
+
+
+    .footer {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        padding: 18px 25px;
+
+    }
+
+
+    .footer-col:nth-child(2) {
+
+        padding-left: 0;
+
+    }
+
+
+    .footer-col:nth-child(3) {
+
+        text-align: left;
+
+    }
+
+}

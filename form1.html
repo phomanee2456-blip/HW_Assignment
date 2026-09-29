@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ขึ้นทะเบียนนักศึกษาใหม่ KMUTNB</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="css/form1.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+    <header class="header">
+
+        <div class="header-left">
+
+            <img
+                src="image/logo_kmutnb-(6).png"
+                alt="โลโก้ มจพ."
+                class="logo"
+            >
+
+            <div class="uni-name">
+
+                <div class="thai-name">
+                    มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+                </div>
+
+                <div class="eng-name">
+                    KING MONGKUT'S UNIVERSITY OF TECHNOLOGY NORTH BANGKOK
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="header-right">
+
+                <div class="user-icon">
+
+                    <svg width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round">
+
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2">
+                        </path>
+
+                        <circle cx="12"
+                                cy="7"
+                                r="4">
+                        </circle>
+
+                    </svg>
+
+                </div>
+
+
+                <div class="system-name">
+
+                    KMUTNB<br>
+                    ADMISSION SYSTEM
+
+                </div>
+
+        </div>
+
+
+    </header>
+
+    
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar">
+
+        <a href="index.html" class="nav-btn">
+            หน้าแรก
+        </a>
+
+        <a href="register.html" class="nav-btn active">
+            ขึ้นทะเบียนนักศึกษา
+        </a>
+
+        <a href="login.html" class="nav-btn">
+            เข้าสู่ระบบ
+        </a>
+
+        <a href="map.html" class="nav-btn">
+            ติดต่อสอบถาม
+        </a>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+    <main class="main-content">
+
+
+        <!-- =========================
+             BANNER
+        ========================== -->
+        <section class="banner">
+
+            <div class="banner-text">
+
+                <p class="banner-small">
+                    TCAS70 PORTFOLIO &amp; QUOTA
+                </p>
+
+                <h1>
+                    แบบฟอร์มสมัครเรียน มจพ.
+                </h1>
+
+                <p>
+                    กรอกข้อมูลให้ครบถ้วนเพื่อประโยชน์ในการตรวจสอบ
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FORM CONTAINER
+        ========================== -->
+        <div class="form-container">
+
+
+            <!-- STEP RADIO -->
+            <input
+                type="radio"
+                name="step"
+                id="step-one"
+                class="step-radio"
+                checked
+            >
+
+            <input
+                type="radio"
+                name="step"
+                id="step-two"
+                class="step-radio"
+            >
+
+            <input
+                type="radio"
+                name="step"
+                id="step-three"
+                class="step-radio"
+            >
+
+
+            <!-- =========================
+                 PROGRESS
+            ========================== -->
+            <section class="progress-card">
+
+                <div class="progress-heading">
+
+                    <span>
+                        ความคืบหน้าการกรอกข้อมูล
+                    </span>
+
+                    <span class="progress-label label-one">
+                        ขั้นตอนที่ 1 จาก 3
+                    </span>
+
+                    <span class="progress-label label-two">
+                        ขั้นตอนที่ 2 จาก 3
+                    </span>
+
+                    <span class="progress-label label-three">
+                        ขั้นตอนที่ 3 จาก 3
+                    </span>
+
+                </div>
+
+
+                <div class="progress-track">
+
+                    <div class="progress-fill"></div>
+
+                </div>
+
+
+                <div class="steps">
+
+                    <div class="step step-one">
+                        <span>1</span>
+                        ข้อมูลส่วนตัว
+                    </div>
+
+                    <div class="step step-two">
+                        <span>2</span>
+                        การศึกษา
+                    </div>
+
+                    <div class="step step-three">
+                        <span>3</span>
+                        ที่อยู่/ผู้ปกครอง
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================================
+                 STEP 1
+            ====================================================== -->
+            <section class="form-card panel-one">
+
+
+                <!-- SECTION HEADING -->
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        ♙
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            หมวดที่ 1: ข้อมูลเบื้องต้นของผู้สมัคร
+                        </h2>
+
+                        <p>
+                            ข้อมูลตามบัตรประจำตัวประชาชน
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- คำนำหน้าชื่อ -->
+                <div class="form-group">
+
+                    <label>
+                        คำนำหน้าชื่อ <span>*</span>
+                    </label>
+
+                    <div class="radio-row title-options">
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="title"
+                                value="นาย"
+                                checked
+                            >
+
+                            <span>
+                                นาย (Mr.)
+                            </span>
+
+                        </label>
+
+
+                        <label class="radio-option">
+
+                            <input
+                                type="radio"
+                                name="title"
+                                value="นางสาว"
+                            >
+
+                            <span>
+                                นางสาว (Miss)
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ชื่อ -->
+                <div class="form-group">
+
+                    <label for="fullname">
+                        ชื่อ - นามสกุล (ภาษาไทย) <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="เช่น ชาวี อัครสิงห์บุรีเดโชโชติช่วงชัชวาล"
+                    >
+
+                </div>
+
+
+                <!-- เลขบัตรประชาชน -->
+                <div class="form-group">
+
+                    <label for="citizen">
+                        เลขประจำตัวประชาชน (13 หลัก) <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="citizen"
+                        name="citizen"
+                        placeholder="1100200345678"
+                        maxlength="13"
+                    >
+
+                </div>
+
+
+                <!-- วันเกิด -->
+                <div class="form-group">
+
+                    <label for="birthdate">
+                        วันเดือนปีเกิด <span>*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="birthdate"
+                        name="birthdate"
+                    >
+
+                </div>
+
+
+                <!-- สัญชาติ -->
+                <div class="form-group">
+
+                    <label for="nationality">
+                        สัญชาติ <span>*</span>
+                    </label>
+
+                    <select
+                        id="nationality"
+                        name="nationality"
+                    >
+
+                        <option value="">
+                            เลือกสัญชาติ
+                        </option>
+
+                        <option value="ไทย">
+                            ไทย
+                        </option>
+
+                        <option value="อื่นๆ">
+                            อื่นๆ
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- โทรศัพท์ -->
+                <div class="form-group">
+
+                    <label for="phone">
+                        หมายเลขโทรศัพท์มือถือ <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="0812345678"
+                        maxlength="10"
+                    >
+
+                </div>
+
+
+                <!-- อีเมล -->
+                <div class="form-group">
+
+                    <label for="email">
+                        อีเมลที่ติดต่อได้ <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="applicant@email.com"
+                    >
+
+                </div>
+
+
+                <!-- BUTTON -->
+                <div class="form-buttons">
+
+                    <span></span>
+
+                    <label
+                        for="step-two"
+                        class="next-btn"
+                    >
+                        ถัดไป: ประวัติการศึกษา →
+                    </label>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+                 STEP 2
+            ====================================================== -->
+            <section class="form-card panel-two">
+
+
+                <!-- SECTION HEADING -->
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        ♧
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            หมวดที่ 2: ประวัติการศึกษา
+                        </h2>
+
+                        <p>
+                            ข้อมูลสถานศึกษาและหลักสูตรที่ต้องการสมัคร
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- สถานศึกษา -->
+                <div class="form-group">
+
+                    <label for="school">
+                        ชื่อสถานศึกษาปัจจุบัน <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="school"
+                        name="school"
+                        placeholder="ชื่อโรงเรียน / สถานศึกษา"
+                    >
+
+                </div>
+
+
+                <!-- ระดับการศึกษา -->
+                <div class="form-group">
+
+                    <label for="education">
+                        ระดับการศึกษา <span>*</span>
+                    </label>
+
+                    <select
+                        id="education"
+                        name="education"
+                    >
+
+                        <option value="">
+                            เลือกระดับการศึกษา
+                        </option>
+
+                        <option value="ม.6">
+                            มัธยมศึกษาปีที่ 6
+                        </option>
+
+                        <option value="ปวช.">
+                            ประกาศนียบัตรวิชาชีพ (ปวช.)
+                        </option>
+
+                        <option value="ปวส.">
+                            ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- แผนการเรียน -->
+                <div class="form-group">
+
+                    <label for="study">
+                        แผนการเรียน / สาขาวิชา <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="study"
+                        name="study"
+                        placeholder="เช่น วิทย์-คณิต"
+                    >
+
+                </div>
+
+
+                <!-- ปีจบ -->
+                <div class="form-group">
+
+                    <label for="year">
+                        ปีที่คาดว่าจะสำเร็จการศึกษา <span>*</span>
+                    </label>
+
+                    <select
+                        id="year"
+                        name="year"
+                    >
+
+                        <option value="">
+                            เลือกปีการศึกษา
+                        </option>
+
+                        <option value="2569">
+                            2569
+                        </option>
+
+                        <option value="2570">
+                            2570
+                        </option>
+
+                        <option value="2571">
+                            2571
+                        </option>
+
+                        <option value="2572">
+                            2572
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- คณะ -->
+                <div class="form-group">
+
+                    <label for="faculty">
+                        คณะที่ต้องการสมัคร <span>*</span>
+                    </label>
+
+                    <select
+                        id="faculty"
+                        name="faculty"
+                    >
+
+                        <option value="">
+                            เลือกคณะ
+                        </option>
+
+                        <option value="วิศวกรรมศาสตร์">
+                            คณะเทคโนโลยีและการจัดการอุตสาหกรรม
+                        </option>
+
+                        <option value="วิทยาศาสตร์ประยุกต์">
+                            คณะบริหารธุรกิจและอุตสาหกรรมบริการ
+                        </option>
+
+                        <option value="ครุศาสตร์อุตสาหกรรม">
+                            คณะอุตสาหกรรมเกษตรดิจิทัล
+                        </option>
+
+
+                    </select>
+
+                </div>
+
+
+                <!-- สาขาวิชา -->
+                <div class="form-group">
+
+                    <label for="course">
+                        สาขาวิชาที่ต้องการสมัคร <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="course"
+                        name="course"
+                        placeholder="ระบุสาขาวิชา"
+                    >
+
+                </div>
+
+
+                <!-- =====================================================
+                     GPA / GPAX
+                ====================================================== -->
+                <div class="subsection">
+
+                    <div class="section-heading subsection-heading">
+
+                        <div class="section-icon">
+                            ▣
+                        </div>
+
+                        <div>
+
+                            <h2>
+                                ผลการเรียนสะสม (GPA / GPAX)
+                            </h2>
+
+                            <p>
+                                กรอกข้อมูลเทอม 2 ตำแหน่งตาม ปพ.1
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- GPAX ONLY -->
+                    <div class="gpax-box">
+
+                        <div class="gpax-label">
+
+                            <label for="gpax">
+                                GPAX เฉลี่ยสะสม (5-6 เทอม)
+                                <span>*</span>
+                            </label>
+
+                            <small>
+                                ระบุค่าระหว่าง 2.00 - 4.00
+                            </small>
+
+                        </div>
+
+
+                        <input
+                            type="number"
+                            id="gpax"
+                            name="gpax"
+                            min="2"
+                            max="4"
+                            step="0.01"
+                            placeholder="3.67"
+                            
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- =====================================================
+                        
+                TRANSCRIPT
+            ===================================================== -->
+            <div class="subsection">
+
+                <div class="section-heading subsection-heading">
+
+                    <div class="section-icon">
+                        ⇧
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            อัปโหลดระเบียน ปพ.1 / Transcript
+                        </h2>
+
+                        <p>
+                            รองรับ PDF, JPG, PNG ขนาดไม่เกิน 10MB
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- UPLOAD BOX -->
+
+                <div class="upload-box">
+
+                    <div class="upload-icon">
+                        ☁
+                    </div>
+
+                    <h3>
+                        แตะเพื่อเลือกไฟล์ หรือ ลากไฟล์มาวาง
+                    </h3>
+
+                    <p>
+                        แนบข้อมูลครบถ้วน ชัดเจน และมีตราประทับสถาบัน
+                    </p>
+
+                    <label for="transcript">
+                        เลือกไฟล์จากอุปกรณ์
+                    </label>
+
+                    <input
+                        type="file"
+                        id="transcript"
+                        name="transcript"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                    >
+
+                </div>
+
+            </div>
+
+
+                <!-- BUTTON -->
+                <div class="form-buttons">
+
+                    <label
+                        for="step-one"
+                        class="back-btn"
+                    >
+                        ← ย้อนกลับ
+                    </label>
+
+                    <label
+                        for="step-three"
+                        class="next-btn"
+                    >
+                        ถัดไป: ที่อยู่/ผู้ปกครอง →
+                    </label>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================================
+                 STEP 3
+            ====================================================== -->
+            <section class="form-card panel-three">
+
+
+                <!-- =========================
+                     ADDRESS
+                ========================== -->
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        ♧
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            3.1 ที่อยู่ตามทะเบียนบ้าน
+                        </h2>
+
+                        <p>
+                            ระบุข้อมูลที่อยู่สำหรับจัดส่งเอกสารทางการศึกษา
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ที่อยู่ -->
+                <div class="form-group">
+
+                    <label for="address">
+                        บ้านเลขที่, หมู่, อาคาร/หมู่บ้าน, ซอย, ถนน
+                        <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="address"
+                        name="address"
+                        placeholder="เช่น 124/85 ถ.วงศ์สว่าง"
+                    >
+
+                </div>
+
+
+                <!-- จังหวัด -->
+                <div class="form-group">
+
+                    <label for="fullname">
+                        จังหวัด <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="จังหวัด"
+                    >
+
+                </div>
+
+
+
+                <!-- เขต / แขวง -->
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="district">
+                            เขต / อำเภอ <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="district"
+                            name="district"
+                            placeholder="ระบุเขต / อำเภอ"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subdistrict">
+                            แขวง / ตำบล <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subdistrict"
+                            name="subdistrict"
+                            placeholder="ระบุแขวง / ตำบล"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- รหัสไปรษณีย์ -->
+                <div class="form-group">
+
+                    <label for="postcode">
+                        รหัสไปรษณีย์ <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="postcode"
+                        name="postcode"
+                        placeholder="เช่น 10800"
+                        maxlength="5"
+                    >
+
+                </div>
+
+
+                <!-- ที่อยู่เดียวกัน -->
+                <label class="check-card">
+
+                    <input
+                        type="checkbox"
+                        id="same-address"
+                        name="same-address"
+                    >
+
+                    <span>
+
+                        <strong>
+                            ใช้ที่อยู่เดียวกับที่อยู่ตามทะเบียนบ้านสำหรับติดต่อ
+                        </strong>
+
+                        <small>
+                            ระบบจะใช้ที่อยู่นี้สำหรับส่งเอกสารการคัดเลือกและเอกสารยืนยันสิทธิ์
+                        </small>
+
+                    </span>
+
+                </label>
+
+
+                <div class="section-divider"></div>
+
+
+                <!-- =========================
+                     GUARDIAN
+                ========================== -->
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        ♙
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            3.2 ข้อมูลผู้ปกครอง / ผู้ติดต่อฉุกเฉิน
+                        </h2>
+
+                        <p>
+                            ระบุข้อมูลผู้ปกครองเพื่อการประสานงานกรณีฉุกเฉิน
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     RELATIONSHIP
+                ========================== -->
+                <div class="form-group">
+
+                    <label>
+                        ความสัมพันธ์กับผู้สมัคร <span>*</span>
+                    </label>
+
+
+                    <div class="guardian-options">
+
+
+                        <!-- บิดา -->
+                        <label class="guardian-option">
+
+                            <input
+                                type="radio"
+                                name="relationship"
+                                value="บิดา"
+                                checked
+                            >
+
+                            <span class="guardian-icon">
+                                ♙
+                            </span>
+
+                            <span>
+                                บิดา
+                            </span>
+
+                        </label>
+
+
+                        <!-- มารดา -->
+                        <label class="guardian-option">
+
+                            <input
+                                type="radio"
+                                name="relationship"
+                                value="มารดา"
+                            >
+
+                            <span class="guardian-icon">
+                                ♙
+                            </span>
+
+                            <span>
+                                มารดา
+                            </span>
+
+                        </label>
+
+
+                        <!-- ผู้ปกครอง -->
+                        <label class="guardian-option">
+
+                            <input
+                                type="radio"
+                                name="relationship"
+                                value="ผู้ปกครอง"
+                            >
+
+                            <span class="guardian-icon">
+                                ⚖
+                            </span>
+
+                            <span>
+                                ผู้ปกครอง
+                            </span>
+
+                        </label>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- ชื่อผู้ปกครอง -->
+                <div class="form-group">
+
+                    <label for="guardian">
+                        ชื่อ - นามสกุล ผู้ปกครอง <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="guardian"
+                        name="guardian"
+                        placeholder="ชื่อและนามสกุลผู้ปกครอง"
+                    >
+
+                </div>
+
+
+                <!-- เบอร์ผู้ปกครอง -->
+                <div class="form-group">
+
+                    <label for="guardianPhone">
+                        เบอร์โทรศัพท์มือถือผู้ปกครอง <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="guardianPhone"
+                        name="guardianPhone"
+                        placeholder="081-555-9876"
+                        maxlength="10"
+                    >
+
+                </div>
+
+
+                <!-- อาชีพ -->
+                <div class="form-group">
+
+                    <label for="occupation">
+                        อาชีพของผู้ปกครอง <span>*</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="occupation"
+                        name="occupation"
+                        placeholder="ระบุอาชีพ"
+                    >
+
+                </div>
+
+
+                <!-- รายได้ -->
+                <div class="form-group">
+
+                    <label for="income">
+                        รายได้ครอบครัวเฉลี่ยต่อเดือน <span>*</span>
+                    </label>
+
+                    <select
+                        id="income"
+                        name="income"
+                    >
+
+                        <option value="">
+                            เลือกรายได้ต่อเดือน
+                        </option>
+
+                        <option>
+                            ต่ำกว่า 15,000 บาท
+                        </option>
+
+                        <option>
+                            15,001 - 25,000 บาท
+                        </option>
+
+                        <option>
+                            25,001 - 40,000 บาท
+                        </option>
+
+                        <option>
+                            40,001 - 70,000 บาท
+                        </option>
+
+                        <option>
+                            70,001 - 100,000 บาท
+                        </option>
+
+                        <option>
+                            มากกว่า 100,000 บาท
+                        </option>
+
+                    </select>
+
+
+                </div>
+
+
+                <div class="section-divider"></div>
+
+
+                <!-- =========================
+                     CONSENT
+                ========================== -->
+                <div class="section-heading">
+
+                    <div class="section-icon">
+                        ♢
+                    </div>
+
+                    <div>
+
+                        <h2>
+                            การรับรองความถูกต้องของข้อมูล
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="notice-box">
+
+                    <strong>
+                        ⓘ กรุณาตรวจสอบข้อมูลก่อนกดยืนยันสมัคร
+                    </strong>
+
+                    <p>
+                        เมื่อยืนยันใบสมัครแล้ว ระบบจะสร้างรหัสประจำตัวผู้สมัคร
+                        (Application ID) และเข้าสู่ขั้นตอนการชำระเงินตามระบบ
+                    </p>
+
+                </div>
+
+
+                <!-- ยืนยัน -->
+                <label class="check-card consent-card">
+
+                    <input
+                        type="checkbox"
+                        id="agreement"
+                        name="agreement"
+                    >
+
+                    <span>
+
+                        ข้าพเจ้าขอรับรองว่าข้อมูลข้างต้นถูกต้องและตรงตามความเป็นจริงทุกประการ
+                        หากตรวจพบว่ามีข้อมูลเท็จหรือเอกสารปลอมแปลง
+                        มหาวิทยาลัยมีสิทธิ์ยกเลิกการสมัครโดยไม่ต้องแจ้งล่วงหน้า
+
+                    </span>
+
+                </label>
+
+
+                <!-- ค่าธรรมเนียม -->
+                <div class="fee-card">
+
+                    <div class="fee-icon">
+                        ▣
+                    </div>
+
+                    <div class="fee-description">
+
+                        <strong>
+                            ค่าธรรมเนียมสมัคร TCAS70
+                        </strong>
+
+                    </div>
+
+                    <div class="fee-price">
+
+                        <strong>
+                            500
+                        </strong>
+
+                        <span>
+                            บาท
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTON -->
+                <div class="form-buttons">
+
+                    <label
+                        for="step-two"
+                        class="back-btn"
+                    >
+                        ← ย้อนกลับ
+                    </label>
+
+
+                <a href="payment1.html" class="submit-btn">
+                    ส่งใบสมัคร ✓
+                </a>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+
+        <div class="footer-col">
+
+            ติดต่อ มจพ. กรุงเทพฯ<br>
+
+            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+
+        </div>
+
+
+        <div class="footer-col">
+
+            1518 ถนนประชาราษฎร์ 1 แขวงวงศ์สว่าง เขตบางซื่อ<br>
+
+            กรุงเทพฯ 10800
+
+        </div>
+
+
+        <div class="footer-col">
+
+            โทรศัพท์ : +66 2 555-2000<br>
+
+            แฟกซ์ : +66 2 587-4350<br>
+
+            อีเมล : contact@op.kmutnb.ac.th
+
+        </div>
+
+    </footer>
+
+
+</body>
+</html>

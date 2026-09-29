@@ -1,0 +1,794 @@
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --primary-red: #b53621;
+    --dark-red: #ac3520;
+
+    --text: #173b63;
+    --text-dark: #243b53;
+    --muted: #7b8798;
+
+    --light-bg: #f5f8fb;
+    --card-bg: #ffffff;
+    --border: #dfe6ee;
+
+    --orange: #f7a229;
+    --white: #ffffff;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    color: var(--text);
+    font-family: "Sarabun", sans-serif;
+    font-size: 13px;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+    min-height: 102px;
+    padding: 5px 48px;
+
+    display: flex;
+    align-items: center;
+
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+
+    gap: 18px;
+}
+
+
+/* โลโก้ + ชื่อมหาวิทยาลัย */
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-right: auto;
+}
+
+.logo {
+    width: 90px;
+    height: 82px;
+    object-fit: contain;
+}
+
+.uni-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.35;
+}
+
+.thai-name {
+    font-size: 17px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.eng-name {
+    font-size: 7px;
+    color: #555555;
+    letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.nav-btn {
+    padding: 9px 18px;
+
+    border-radius: 9px;
+
+    background: #33383e;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    white-space: nowrap;
+
+    transition: 0.2s ease;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+    background: #33383e;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   USER
+========================================================= */
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-left: 18px;
+}
+
+.user-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #e60012;
+    border-radius: 50%;
+
+    color: #e60012;
+}
+
+.system-name {
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 1.4;
+
+    color: #222222;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    min-height: 325px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: var(--primary-red);
+    color: #ffffff;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1000px;
+
+    padding: 25px 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================================================
+   TCAS 70
+========================================================= */
+
+.hero-badge {
+    display: inline-block;
+
+    padding: 7px 19px;
+    margin-bottom: 14px;
+
+    border-radius: 8px;
+
+    background: #f7a229;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+/* ใน HTML ใช้ h2 */
+
+.hero h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 28px;
+    font-weight: 600;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.hero p {
+    margin: 10px 0 18px;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.hero-btn {
+    min-width: 110px;
+
+    padding: 8px 18px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 500;
+
+    transition: 0.2s ease;
+}
+
+
+/* ปุ่มสมัครเรียน */
+
+.hero-btn.primary {
+    background: #f7a229;
+    color: #ffffff;
+
+    border: 1px solid #f7a229;
+}
+
+
+/* ปุ่มเข้าสู่ระบบ */
+
+.hero-btn.secondary {
+    background: #f7a229;
+    color: #ffffff;
+
+    border: 1px solid #f7a229;
+}
+
+.hero-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.main-content {
+    width: 100%;
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   APPLICATION
+========================================================= */
+
+.application-section {
+    padding: 42px 35px 34px;
+    background: #ffffff;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section-heading h2 {
+    margin: 0 0 5px;
+
+    color: var(--primary-red);
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section-heading p {
+    margin: 0;
+
+    color: #8b96a5;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   STEPS
+========================================================= */
+
+.steps-grid {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+}
+
+.step-card {
+    position: relative;
+
+    min-height: 105px;
+
+    padding: 17px 18px;
+
+    border: 1px solid #dce4ec;
+
+    border-radius: 9px;
+
+    background: #f7f9fc;
+
+    box-shadow: 0 2px 7px rgba(23, 59, 99, 0.04);
+
+    transition: all 0.25s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-3px);
+
+    background: #ffffff;
+
+    border-color: #e8b09f;
+
+    box-shadow: 0 7px 18px rgba(181, 54, 33, 0.10);
+}
+
+.step-number {
+    margin-bottom: 4px;
+
+    color: #e65320;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+.step-card h3 {
+    margin: 0 0 3px;
+
+    color: var(--text);
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.step-card p {
+    margin: 0;
+
+    color: #7b8798;
+
+    font-size: 7px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   NEWS SECTION
+========================================================= */
+
+.news-section {
+    padding: 30px 35px 40px;
+
+    background: #f5f8fb;
+}
+
+.news-heading {
+    max-width: 1250px;
+
+    margin: 0 auto 17px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-heading h2 {
+    position: relative;
+
+    margin: 0;
+    padding-left: 13px;
+
+    color: var(--primary-red);
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.news-heading h2::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 3px;
+
+    width: 4px;
+    height: 18px;
+
+    border-radius: 5px;
+
+    background: var(--primary-red);
+}
+
+
+/* =========================================================
+   NEWS GRID
+========================================================= */
+
+.news-grid {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   NEWS CARD
+========================================================= */
+
+.news-card {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 225px;
+
+    border: 1px solid #dce4ec;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 2px 7px rgba(23, 59, 99, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #e4b3a5;
+
+    box-shadow:
+        0 9px 22px rgba(23, 59, 99, 0.10);
+}
+
+
+/* =========================================================
+   NEWS IMAGE
+========================================================= */
+
+.news-image {
+    width: 100%;
+    height: 155px;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center top;
+
+    background: #eef2f6;
+}
+
+
+/* =========================================================
+   NEWS CONTENT
+========================================================= */
+
+.news-content {
+    position: relative;
+
+    flex: 1;
+
+    padding: 12px 14px 14px;
+}
+
+.news-type {
+    display: inline-block;
+
+    margin-bottom: 5px;
+
+    padding: 3px 8px;
+
+    border-radius: 20px;
+
+    background: #fff1eb;
+
+    color: #e35a29;
+
+    font-size: 7px;
+    font-weight: 600;
+}
+
+.news-date {
+    position: absolute;
+
+    top: 14px;
+    right: 14px;
+
+    color: #9aa5b3;
+
+    font-size: 7px;
+}
+
+.news-content h3 {
+    margin: 3px 0 6px;
+
+    padding-right: 5px;
+
+    color: #183f67;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    line-height: 1.55;
+}
+
+.news-content p {
+    margin: 0;
+
+    color: #7c8998;
+
+    font-size: 8px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    min-height: 68px;
+
+    padding: 10px 40px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    gap: 30px;
+
+    background: var(--primary-red);
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+}
+
+.footer-col {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .header {
+        padding: 5px 25px;
+        gap: 10px;
+    }
+
+    .thai-name {
+        font-size: 14px;
+    }
+
+    .nav-btn {
+        padding: 8px 13px;
+        font-size: 10px;
+    }
+
+    .header-right {
+        margin-left: 8px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .header {
+        flex-wrap: wrap;
+        min-height: auto;
+        padding: 10px 20px;
+    }
+
+    .header-left {
+        margin-right: 0;
+    }
+
+    .header-right {
+        margin-left: auto;
+    }
+
+    .nav-btn {
+        padding: 7px 11px;
+        font-size: 9px;
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 8px 10px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 50px;
+    }
+
+    .thai-name {
+        font-size: 10px;
+    }
+
+    .eng-name {
+        font-size: 5px;
+    }
+
+    .header-right {
+        display: none;
+    }
+
+    .nav-btn {
+        padding: 6px 9px;
+        font-size: 8px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 300px;
+    }
+
+    .hero-content {
+        padding: 25px 15px;
+    }
+
+    .hero-badge {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero p {
+        font-size: 8px;
+    }
+
+    .hero-btn {
+        min-width: 95px;
+        padding: 7px 12px;
+        font-size: 9px;
+    }
+
+
+    /* APPLICATION */
+
+    .application-section {
+        padding: 30px 15px;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .step-card {
+        min-height: 90px;
+    }
+
+
+    /* NEWS */
+
+    .news-section {
+        padding: 25px 15px 30px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .news-card {
+        min-height: auto;
+    }
+
+    .news-image {
+        height: 180px;
+    }
+
+
+    /* FOOTER */
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 15px;
+    }
+}
